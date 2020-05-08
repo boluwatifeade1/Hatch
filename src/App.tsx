@@ -3,7 +3,7 @@ import Table from './components/Table/Table';
 import classes from './App.module.css';
 
 const App: React.FC = () => {
-  const url: string = "http://private-041255-sakura3.apiary-mock.com/applicants";
+  const url: string = "https://private-041255-sakura3.apiary-mock.com/applicants";
   const [ data,setData ] = useState< any[] | undefined>(undefined);
   const [ loading, setLoading] = useState<boolean>(true);
 
