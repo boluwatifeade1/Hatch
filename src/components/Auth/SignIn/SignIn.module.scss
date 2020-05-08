@@ -1,0 +1,23 @@
+.signIn{
+  width: 60%;
+  margin: auto;
+  display: block;
+  h3{
+    margin-bottom: 10px;
+  }
+  input {
+    background: none;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 10px;
+  }
+}
+.submit{
+  border:1px solid grey;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+}

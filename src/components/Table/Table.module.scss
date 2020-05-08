@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 1.6rem;
+  font-family: 'Roboto', san-serif;
+  color: #191E51;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.tableHeader{
+  height: 32px;
+  z-index: 7;
+  border: 1px solid #C4C8D0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.header{
+  display: flex;
+  list-style: none;
+  position:relative;
+  padding: .5rem 2rem;
+  border-left: unset;
+  & *:not(:last-child){
+    margin-right: 2rem;
+  }
+  li{
+    cursor:pointer;
+    &:last-child{
+      margin-left: auto;
+    }
+  }
+}
+.dropDownMenu{
+  position: absolute;
+  top: 100% !important;
+  left: unset !important;
+  transform: unset !important;
+  border: unset;
+  box-shadow: -5px 5px 11px rgba(1, 5, 48, 0.06);
+}
+.itemIcon.dropDownToggle::after{
+  content: unset;
+}
+.dropdownItem.u-center{
+  display: flex;
+}
+.searchDropdownMenu{
+  width: 20rem;
+  right: 0 !important;
+  .formGroup{
+    margin-bottom:unset;
+  }
+  .formControl{
+    border: unset;
+    &:focus{
+      box-shadow:unset
+    }
+  }
+}
+.table{
+  font-size: 1.3rem;
+  color: #191E51;
+  .tableHead{
+    font-size: 1.3rem;
+    padding: .5rem;
+    background:rgb(187, 187, 187);
+    border: 1px solid #818181;
+    border-left: unset;
+    flex:1;
+    display: flex;
+    i{
+      margin-left: auto;
+    }
+  }  
+  .tableData{
+    padding: .5rem;
+    border: 1px solid #C4C8D0;
+    background:rgb(251, 251, 251);
+    border-left: unset;
+    border-top: unset;
+    flex:1;
+  }
+  .tr{
+    display:flex;
+    width: 100%;
+    i {
+      cursor:pointer;
+    }
+  }
+}
